@@ -7,3 +7,4 @@ dist/pack/
 .private/
 .pytest_cache/
 sweeplab-demo/
+dist/*.tar.gz
