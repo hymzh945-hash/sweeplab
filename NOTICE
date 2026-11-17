@@ -1,0 +1,18 @@
+SweepLab
+Copyright (c) 2026 SweepLab
+
+This product builds on third-party open-source software:
+
+1. Optuna — https://github.com/optuna/optuna
+   License: MIT
+   Copyright (c) 2018 Preferred Networks, Inc. and other contributors
+   Used as the search engine behind `--mode tpe` and `--mode random`.
+
+2. pandas, NumPy — BSD-3-Clause
+3. Matplotlib — Matplotlib License (PSF-based, BSD-compatible)
+
+SweepLab's own code (strategies, backtest engine, walk-forward audit, stability
+map, reporting, CLI, server, licensing) is original work licensed under MIT.
+
+No third-party source code is vendored into this package; the dependencies are
+resolved through the normal Python packaging toolchain.

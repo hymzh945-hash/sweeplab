@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sweeplab"
+version = "0.1.0"
+description = "Parameter sweeps that survive out of sample: walk-forward audit and stability maps for trading strategies"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "SweepLab" }]
+keywords = ["backtesting", "parameter-optimization", "walk-forward", "overfitting", "quantitative-trading"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = ["pandas>=2.0", "numpy>=1.24", "matplotlib>=3.7", "optuna>=3.6"]
+
+[project.optional-dependencies]
+parquet = ["pyarrow>=14"]
+license = ["cryptography>=41"]
+web = []
+
+[project.scripts]
+sweeplab = "sweeplab.cli:main"
+sw = "sweeplab.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/sweeplab/sweeplab"
+Source = "https://github.com/sweeplab/sweeplab"
+
+[tool.setuptools.packages.find]
+include = ["sweeplab*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
