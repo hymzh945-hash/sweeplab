@@ -88,3 +88,11 @@ strategy with fewer than 3 round trips is penalised, so the sweep can't win by n
 SweepLab's code is MIT. Optuna is MIT and used as a dependency (see `NOTICE`). Not affiliated with
 Optuna or Preferred Networks. Nothing here is financial advice; past performance is not indicative
 of future results.
+
+## Pro edition
+
+The paid edition adds the HTML report templates, CSV exports, and an offline-verified signed
+licence — no server check, no telemetry. $34 once, yours to keep:
+
+https://hymz.gumroad.com/l/sweeplab
+
